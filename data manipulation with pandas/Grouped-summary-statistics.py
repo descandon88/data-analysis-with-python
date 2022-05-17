@@ -1,4 +1,4 @@
-# Grouping data without groupby
+# Calculating  without groupby()
 
 # Calc total weekly sales
 sales_all = sales["weekly_sales"].sum()
@@ -15,3 +15,6 @@ sales_C = sales[sales["type"] == "C"]["weekly_sales"].sum()
 # Get proportion for each type
 sales_propn_by_type = [sales_A, sales_B, sales_C] / sales_all
 print(sales_propn_by_type)
+
+
+# Calculations with .groupby()
