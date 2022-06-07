@@ -39,3 +39,18 @@ print(temperatures_ind.loc['2010-01-01':'2011-12-31'])
 
 # Use .loc[] to subset temperatures_ind for rows from Aug 2010 to Feb 2011
 print(temperatures_ind.loc['2010-08-01':'2011-02-28'])
+
+# Subsetting by row/column number
+
+# Get 23rd row, 2nd column (index 22, 1)
+print(temperatures.iloc[22,1])
+
+# Use slicing to get the first 5 rows
+print(temperatures.iloc[0:5,:])
+
+# Use slicing to get columns 3 to 4
+print(temperatures.iloc[:,2:4])
+
+# Use slicing in both directions at once
+print(temperatures.iloc[0:5,2:4])
+
