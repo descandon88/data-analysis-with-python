@@ -3,11 +3,11 @@
 -- The syntax for creating simple tables is as follows:
 
 -- Create a table for the universities entity type
-CREATE TABLE universities {
+CREATE TABLE universities (
     university_shortname text,
     university text,
     university_city text
-};
+);
 
 
 
